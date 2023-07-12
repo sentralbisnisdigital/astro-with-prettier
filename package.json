@@ -8,8 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "pnpm exec prettier --plugin-search-dir=. --write .",
-    "check": "pnpm dlx concurrently \"pnpm exec prettier --plugin-search-dir=. --check .\" \"astro check\" \"tsc --noEmit\""
+    "format": "prettier --plugin-search-dir=. --write .",
+    "check": "pnpm dlx concurrently \"prettier --plugin-search-dir=. --check .\" \"astro check\" \"tsc --noEmit\""
   },
   "dependencies": {
     "astro": "^2.8.1",
